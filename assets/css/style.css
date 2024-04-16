@@ -769,7 +769,8 @@ footer {
         font-size: 15px;
     }
 
-    .contact h6 {
+    .contact h6,
+    .contact a {
         font-size: 17px;
         text-align: center;
     }
