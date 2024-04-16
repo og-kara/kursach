@@ -443,7 +443,8 @@ footer {
     transition: .9s;
 }
 
-.contact h6 {
+.contact h6,
+.contact a {
     font-size: 20px;
     font-family: "Unbounded-Light";
     color: #FFFFFF;
