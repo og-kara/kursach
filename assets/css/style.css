@@ -2974,6 +2974,8 @@ footer {
 
     .korzina-tovar {
         margin: 14px 0px;
+        display: flex;
+        align-items: center;
     }
 
     .counter {
