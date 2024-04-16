@@ -1119,7 +1119,8 @@ footer {
         margin-top: 7px;
     }
 
-    .contact h6 {
+    .contact h6,
+    .contact a{
         font-size: 14px;
     }
 
