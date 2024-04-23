@@ -1433,28 +1433,6 @@ footer {
 
 /* banner-catalog */
 
-/* filter-catalog */
-.filter-catalog {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 55px;
-    padding-bottom: 85px;
-}
-
-.filter-catalog a {
-    font-family: "Unbounded-Light";
-    font-size: 27px;
-    color: #503217;
-}
-
-.filter-catalog a:hover {
-    transition: .9s;
-    text-decoration: underline;
-}
-
-/* filter-catalog  */
 
 /* catalog */
 .catalog-cards {
@@ -1589,16 +1567,6 @@ footer {
         padding: 135px 0px 30px 0px;
         letter-spacing: 2px;
     }
-
-    .filter-catalog {
-        gap: 30px;
-        padding-bottom: 40px;
-    }
-
-    .filter-catalog a {
-        font-size: 13px;
-    }
-
     .catalog-cards {
         gap: 28px;
         padding-bottom: 30px;
@@ -1676,10 +1644,6 @@ footer {
         font-size: 24px;
         padding: 90px 0px 20px 0px;
         letter-spacing: 1px;
-    }
-
-    .filter-catalog {
-        display: none;
     }
 
     .none_420 {
