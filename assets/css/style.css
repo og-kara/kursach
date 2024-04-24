@@ -3068,7 +3068,7 @@ footer {
 
 /* EDIT */
 .edit {
-    padding: 340px 0px 175px 0px;
+    padding: 240px 100px 175px 350px;
 }
 
 .edit-block {
@@ -3080,10 +3080,10 @@ footer {
 
 .edit-block h2 {
     font-family: "Gropled-Bold";
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     color: #503217;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 }
 
 .form_edit input {
