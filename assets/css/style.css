@@ -1156,7 +1156,7 @@ footer {
 
     .footer-info p,
     .footer-info_1 p,
-    .footer-info_1 a{
+    .footer-info_1 a {
         font-size: 12px;
     }
 }
@@ -1567,6 +1567,7 @@ footer {
         padding: 135px 0px 30px 0px;
         letter-spacing: 2px;
     }
+
     .catalog-cards {
         gap: 28px;
         padding-bottom: 30px;
@@ -3141,17 +3142,17 @@ footer {
 @media (max-width:768px) {
 
     .edit {
-        padding: 245px 0px 145px 0px;
+        padding: 100px 0px 0px 40px;
     }
 
     .edit-block h2 {
-        font-size: 65px;
-        padding-bottom: 85px;
+        font-size: 37px;
+        padding-bottom: 55px;
     }
 
     .form_edit input {
         letter-spacing: 1px;
-        width: 397px;
+        width: 300px;
         height: 36px;
         font-size: 15px;
     }
@@ -3170,14 +3171,14 @@ footer {
     }
 
     .edit-block a {
-        padding: 12px 112px;
+        padding: 12px 75px;
     }
 }
 
 @media (max-width:420px) {
 
     .edit {
-        padding: 170px 0px 110px 0px;
+        padding: 130px 30px 0px 0px;
     }
 
     .edit-block h2 {
@@ -3206,7 +3207,7 @@ footer {
     }
 
     .edit-block a {
-        padding: 11px 74px;
+        padding: 11px 80px;
     }
 }
 
@@ -3214,7 +3215,7 @@ footer {
 
 /* DELETE */
 .delete {
-    padding: 340px 0px 175px 0px;
+    padding: 320px 200px 175px 400px;
 }
 
 .delete-block h2 {
@@ -3222,7 +3223,7 @@ footer {
     font-size: 70px;
     text-align: center;
     color: #503217;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 }
 
 .delete-block {
@@ -3290,20 +3291,20 @@ footer {
 @media (max-width:768px) {
 
     .delete {
-        padding: 250px 0px 140px 0px;
+        padding: 200px 0px 140px 100px;
     }
 
     .delete-block h2 {
-        font-size: 66px;
-        padding-bottom: 55px;
+        font-size: 37px;
+        padding-bottom: 45px;
     }
 
     .info-delete p {
-        font-size: 21px;
+        font-size: 16px;
     }
 
     .info-delete h5 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .info-delete {
@@ -3312,19 +3313,19 @@ footer {
 
     .btn-cancel,
     .btn-delete {
-        padding: 13px 37px;
-        font-size: 20px;
+        padding: 11px 33px;
+        font-size: 16px;
     }
 
     .delete-btn {
-        gap: 50px;
+        gap: 40px;
     }
 }
 
 @media (max-width:420px) {
 
     .delete {
-        padding: 170px 0px 115px 0px;
+        padding: 170px 0px 115px 35px;
     }
 
     .delete-block h2 {
@@ -3986,7 +3987,8 @@ footer {
         content: url(../img/close.svg);
         font-size: 11px;
     }
-    .profile{
+
+    .profile {
         display: flex;
         flex-direction: row;
     }
@@ -4016,7 +4018,7 @@ footer {
         justify-content: left;
         padding-top: 15px;
         padding-left: 30px;
-        
+
     }
 
     .admin_exit img {
