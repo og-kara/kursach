@@ -3360,7 +3360,7 @@ footer {
 
 /* ADDITION */
 .addition {
-    padding: 340px 0px 175px 0px;
+    padding: 240px 100px 175px 460px;
 }
 
 .addition-block {
@@ -3372,26 +3372,10 @@ footer {
 
 .addition-block h2 {
     font-family: "Gropled-Bold";
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     color: #503217;
-    padding-bottom: 100px;
-}
-
-.form_addition input {
-    width: 420px;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid #503217;
-    font-family: "Gropled-Bold";
-    letter-spacing: 2px;
-}
-
-.form_addition ::placeholder {
-    text-align: center;
-    font-family: "Gropled-Bold";
-    font-size: 20px;
-    color: #50321780;
+    padding-bottom: 70px;
 }
 
 .form_addition {
@@ -3403,7 +3387,7 @@ footer {
     padding-bottom: 70px;
 }
 
-.addition-block a {
+.btn_add {
     background-color: transparent;
     border-radius: 10px;
     color: #503217;
@@ -3415,33 +3399,33 @@ footer {
     letter-spacing: 1px;
 }
 
-.addition-block a:hover {
+.btn_add:hover {
     background-color: #503217;
     color: #FFFFFF;
     transition: .9s;
 }
 
-.addition-block a:not(:hover) {
+.btn_add:not(:hover) {
     transition: .9s;
 }
 
 @media (max-width:768px) {
     .addition {
-        padding: 245px 0px 140px 0px;
+        padding: 120px 0px 0px 55px;
     }
 
     .addition-block h2 {
-        font-size: 66px;
-        padding-bottom: 85px;
+        font-size: 37px;
+        padding-bottom: 55px;
     }
 
-    .form_addition input {
+    .form {
         letter-spacing: 1px;
-        width: 397px;
+        width: 350px;
         height: 36px;
     }
 
-    .form_addition ::placeholder {
+    .form {
         font-size: 15px;
     }
 
@@ -3450,16 +3434,16 @@ footer {
         padding-bottom: 50px;
     }
 
-    .addition-block a {
+    .btn_add {
         font-size: 19px;
-        padding: 12px 125px;
+        padding: 12px 127px;
     }
 
 }
 
 @media (max-width:420px) {
     .addition {
-        padding: 170px 0px 110px 0px;
+        padding: 170px 0px 110px 35px;
     }
 
     .addition-block h2 {
@@ -3467,13 +3451,13 @@ footer {
         padding-bottom: 55px;
     }
 
-    .form_addition input {
+    .form {
         letter-spacing: 1px;
         width: 290px;
         height: 27px;
     }
 
-    .form_addition ::placeholder {
+    .form {
         font-size: 12px;
         letter-spacing: 1px;
     }
@@ -3483,15 +3467,18 @@ footer {
         padding-bottom: 25px;
     }
 
-    .addition-block a {
+    .btn_add {
         font-size: 15px;
-        padding: 11px 100px;
+        padding: 11px 110px;
+    }
+
+    .btn_add {
+        margin-top: -5px;
     }
 
 }
 
 /* ADDITION */
-
 
 /* ADMIN */
 .panel {
