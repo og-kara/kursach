@@ -3215,7 +3215,7 @@ footer {
 
 /* DELETE */
 .delete {
-    padding: 320px 200px 175px 400px;
+    padding: 320px 230px 175px 450px;
 }
 
 .delete-block h2 {
@@ -3291,7 +3291,7 @@ footer {
 @media (max-width:768px) {
 
     .delete {
-        padding: 200px 0px 140px 100px;
+        padding: 200px 0px 140px 90px;
     }
 
     .delete-block h2 {
@@ -3427,7 +3427,6 @@ footer {
     font-size: 20px;
     color: #50321780;
 }
-
 @media (max-width:768px) {
     .addition {
         padding: 120px 0px 0px 55px;
