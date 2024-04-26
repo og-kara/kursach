@@ -1432,7 +1432,30 @@ footer {
 }
 
 /* banner-catalog */
+/* filter-catalog */
+.filter-catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    padding-bottom: 85px;
+}
 
+.filter-catalog a {
+    font-size: 27px;
+    color: #503217;
+    font-family: "Unbounded-Light";
+}
+.filter-catalog a:hover{
+    transition: .7s;
+    text-decoration: underline;
+}
+.filter-catalog a:not(:hover){
+    transition: .7s;
+}
+
+/* filter-catalog */
 
 /* catalog */
 .catalog-cards {
@@ -1629,6 +1652,14 @@ footer {
         width: 35px;
         height: 35px;
     }
+    .filter-catalog {
+        gap: 30px;
+        padding-bottom: 45px;
+    }
+    
+    .filter-catalog a {
+        font-size: 14px;
+    }
 }
 
 @media (max-width:420px) {
@@ -1650,6 +1681,66 @@ footer {
     .none_420 {
         display: none;
     }
+    .block_420{
+        display: block;
+
+    }
+    .accordion {
+        transform: translateZ(0);
+        background: #503217;
+        color: #FFFFFF;
+      }
+      
+      .accordion>.accordion-toggle {
+        display: none;
+        position: absolute;
+        opacity: 0;
+      }
+
+      .accordion>label {
+        display: block;
+        position: relative;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        color: #503217;
+        background-color: #FFFFFF;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      
+      .accordion>label:after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        right: 20px;
+        width: 12px;
+        height: 12px;
+        border-left: 2px solid #555;
+        border-top: 2px solid #555;
+        transform: rotate(-135deg);
+        transition: 0.4s transform;
+      }
+      
+      .accordion>section {
+        overflow: hidden;
+        height: 0;
+        transition: all .4s;
+      }
+      
+      .accordion>.accordion-toggle:checked~label:after {
+        transform: rotate(45deg);
+        top: 16px;
+      }
+      
+      .accordion>.accordion-toggle:checked~section {
+        height: 50px;
+      }
+      
+      .accordion>section p {
+        margin: 15px 0;
+        padding: 0 20px;
+      }
 
     .catalog-card img {
         width: 180px;
@@ -3427,6 +3518,7 @@ footer {
     font-size: 20px;
     color: #50321780;
 }
+
 @media (max-width:768px) {
     .addition {
         padding: 120px 0px 0px 55px;
