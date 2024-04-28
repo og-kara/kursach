@@ -111,6 +111,16 @@ header {
     display: none;
 }
 
+.fil {
+    display: none;
+}
+
+#filter,
+[for=filter] {
+    display: none;
+}
+
+
 /* header */
 
 /* banner */
@@ -1447,11 +1457,13 @@ footer {
     color: #503217;
     font-family: "Unbounded-Light";
 }
-.filter-catalog a:hover{
+
+.filter-catalog a:hover {
     transition: .7s;
     text-decoration: underline;
 }
-.filter-catalog a:not(:hover){
+
+.filter-catalog a:not(:hover) {
     transition: .7s;
 }
 
@@ -1576,6 +1588,9 @@ footer {
 .item:not(:hover) {
     transition: .9s;
 }
+.fil_420 {
+    display: none;
+}
 
 /* pagination */
 @media (max-width:768px) {
@@ -1652,24 +1667,33 @@ footer {
         width: 35px;
         height: 35px;
     }
+
     .filter-catalog {
         gap: 30px;
         padding-bottom: 45px;
     }
-    
+
     .filter-catalog a {
         font-size: 14px;
+    }
+
+    .fil_420 {
+        display: none;
     }
 }
 
 @media (max-width:420px) {
+    body {
+        position: relative;
+    }
+
     .none_768 {
         display: block;
     }
 
     .banner-catalog {
         height: 30vh;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .banner-catalog-h h2 {
@@ -1678,69 +1702,87 @@ footer {
         letter-spacing: 1px;
     }
 
+    .fil_420 {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        gap: 5px;
+    }
+
+    .fil_p {
+        text-align: right;
+        font-size: 15px;
+        color: #503217;
+        font-family: "Gropled-Bold";
+        letter-spacing: 2px;
+    }
+
+    .filter-catalog {
+        display: none;
+    }
+
     .none_420 {
         display: none;
     }
-    .block_420{
-        display: block;
+
+    [for=filter] {
+        display: flex;
+        justify-content: right;
+    }
+
+    [for=filter]::before {
+        content: url(../img/catalog/tune.png);
+        font-size: 10px;
+        padding: 0px 20px 10px 0px;
+    }
+
+    .fil {
+        position: absolute;
+        width: 35%;
+        background-color: #a79785;
+        padding: 40px 15px 30px 10px;
+        gap: 15px;
+        top: 350px;
+        right: 20px;
+        flex-direction: column;
+        display: none;
+        z-index: 100;
+    }
+
+    .fil a {
+        color: #FFFFFF;
+        font-size: 13px;
+        font-family: "Unbounded-Light";
+        text-align: right;
+    }
+
+    #filter:checked+[for=filter]+.fil {
+        display: flex;
+        animation: show 0.5s;
+    }
+
+    #filter:checked+[for=filter]::before {
+        content: url(../img/catalog/close.png);
+        font-size: 18px;
+        z-index: 1000;
+        padding: 10px 30px 0px 0px;
 
     }
-    .accordion {
-        transform: translateZ(0);
-        background: #503217;
-        color: #FFFFFF;
-      }
-      
-      .accordion>.accordion-toggle {
-        display: none;
-        position: absolute;
-        opacity: 0;
-      }
 
-      .accordion>label {
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    .block_420 {
         display: block;
-        position: relative;
-        height: 50px;
-        line-height: 50px;
-        padding: 0 20px;
-        color: #503217;
-        background-color: #FFFFFF;
-        font-size: 15px;
-        cursor: pointer;
-      }
-      
-      .accordion>label:after {
-        content: '';
-        position: absolute;
-        top: 12px;
-        right: 20px;
-        width: 12px;
-        height: 12px;
-        border-left: 2px solid #555;
-        border-top: 2px solid #555;
-        transform: rotate(-135deg);
-        transition: 0.4s transform;
-      }
-      
-      .accordion>section {
-        overflow: hidden;
-        height: 0;
-        transition: all .4s;
-      }
-      
-      .accordion>.accordion-toggle:checked~label:after {
-        transform: rotate(45deg);
-        top: 16px;
-      }
-      
-      .accordion>.accordion-toggle:checked~section {
-        height: 50px;
-      }
-      
-      .accordion>section p {
-        margin: 15px 0;
-        padding: 0 20px;
-      }
+    }
 
     .catalog-card img {
         width: 180px;
