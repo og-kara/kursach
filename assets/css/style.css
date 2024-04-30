@@ -1588,6 +1588,7 @@ footer {
 .item:not(:hover) {
     transition: .9s;
 }
+
 .fil_420 {
     display: none;
 }
@@ -1874,6 +1875,7 @@ footer {
 
 .tovar-foto-column img {
     width: 216px;
+    height: 270px;
 }
 
 .tovar-block {
@@ -1886,8 +1888,51 @@ footer {
 .tovar-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
+}
+
+.charac {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+    padding-top: 7px;
+}
+
+.diam,
+.type,
+.weight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.diam {
+    gap: 175px;
+}
+
+.type,
+.weight {
+    gap: 300px;
+}
+
+
+.diam h5,
+.type h5,
+.weight h5 {
+    font-family: "Gropled-Bold";
+    font-size: 23px;
+    color: #503217;
+    letter-spacing: 2px;
+}
+
+.diam p,
+.type p,
+.weight p {
+    font-family: "URWBookman-Light";
+    font-size: 23px;
+    color: #50321785;
 }
 
 .rating {
@@ -1912,7 +1957,7 @@ footer {
     color: #503217;
     font-size: 24px;
     font-family: "URWBookman-Light";
-    line-height: 155%;
+    line-height: 147%;
 }
 
 .tovar-info h4 {
@@ -2020,6 +2065,36 @@ footer {
     .btn_tovar {
         padding-top: 15px;
     }
+
+    .charac {
+        gap: 12px;
+    }
+
+    .diam {
+        gap: 188px;
+    }
+
+    .type {
+        gap: 300px;
+    }
+
+    .weight {
+        gap: 295px;
+    }
+
+    .diam h5,
+    .type h5,
+    .weight h5 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .diam p,
+    .type p,
+    .weight p {
+        font-size: 20px;
+    }
+
 }
 
 @media (max-width:420px) {
@@ -2084,6 +2159,35 @@ footer {
 
     .btn_tovar {
         padding-top: 15px;
+    }
+
+    .charac {
+        gap: 7px;
+        padding-bottom: 7px;
+    }
+
+    .diam {
+        gap: 110px;
+    }
+
+    .type {
+        gap: 180px;
+    }
+
+    .weight {
+        gap: 178px;
+    }
+
+    .diam h5,
+    .type h5,
+    .weight h5 {
+        font-size: 13px;
+    }
+
+    .diam p,
+    .type p,
+    .weight p {
+        font-size: 13px;
     }
 }
 
